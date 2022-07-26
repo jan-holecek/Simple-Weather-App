@@ -1,6 +1,5 @@
 const form = document.querySelector("form");
 const ul = document.querySelector("ul");
-const msg = document.querySelector(".msg")
 
 form.addEventListener("submit", e => {
     const cityName = document.querySelector("input").value;
@@ -45,10 +44,9 @@ form.addEventListener("submit", e => {
         ul.appendChild(li);
         cards.push(name.toLowerCase());
     }).catch(() => {
-        msg.textContent = "Please search for a valid city!";
+        alert("Zadej platný název města!");
     })
 
-    msg.textContent = "";
     form.reset();
     input.focus();
 });

@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
 }
 
 body {
@@ -11,7 +13,10 @@ body {
 }
 
 .topBaner {
-    padding: 30px 0 0 50px;
+    padding: 30px 0 0 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .topBaner h1 {
@@ -23,16 +28,21 @@ body {
 
 .topBaner form input {
     outline: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #fff;
     height: 40px;
     border: none;
     background: none;
     border-bottom: 1px #fff solid;
+    text-align: left;
 }
   
 .topBaner form input::placeholder {
     color: rgb(228, 228, 228);
+}
+
+.card {
+    margin: 0 auto;
 }
 
 .topBaner form button {
@@ -43,7 +53,7 @@ body {
     padding: 10px 20px;
     margin-left: 15px;
     border-radius: 5px;
-    background: #ff3154;
+    background: #ee1539;
     transition: background 0.2s ease-in-out;
     border: none;
     cursor: pointer;
@@ -51,10 +61,6 @@ body {
   
 .topBaner form button:hover {
     background: #ff0026;
-}
-
-.msg {
-    color: #910319;
 }
 
 .wind::before {
